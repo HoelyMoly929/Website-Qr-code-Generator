@@ -11,4 +11,25 @@ What I learned:
 
 - How to structure a small Node.js project
 
+## ⚙️ Opening the Generated QR Code
+
+In the project, the QR code image is automatically opened after it’s created.
+Depending on your operating system, you’ll need to use a different command inside your Node.js script:
+
+```
+// Open the generated QR code image based on your OS
+
+// 🪟 Windows
+exec(`start ${qrPath}`);
+
+// 🍎 macOS
+exec(`open ${qrPath}`);
+
+// 🐧 Linux
+exec(`xdg-open ${qrPath}`);
+```
+
+Make sure to uncomment the command that matches your OS and comment out the others.
+This tells Node.js which command to use to open the QR code file automatically.
+
 This was a fun and quick experiment to get comfortable with the Node.js environment.
