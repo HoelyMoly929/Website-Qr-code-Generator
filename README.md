@@ -22,7 +22,7 @@ Depending on your operating system, you’ll need to use a different command ins
 // 🪟 Windows
 exec(`start ${qrPath}`);
 
-// 🍎 macOS
+// 🍎 macOS (default)
 exec(`open ${qrPath}`);
 
 // 🐧 Linux
